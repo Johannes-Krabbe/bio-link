@@ -1,7 +1,17 @@
 html{
     background-color: #2C3333;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 2em;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+
 }
 
 header p {
@@ -13,37 +23,33 @@ header p {
 
 header {
     margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
-.picAndName {
-    text-align: center;
+.ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
+
+.links{
+    width: 100%;
+}
+
+main{
+    width: 100%;
+}
+
 
 .profilePicture img{
     border-radius: 100%;
     height: 10rem;
 }
 
-.links{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.ul {
-    list-style: none;
-    margin: 10px auto ;
-    display: flex;
-    flex-direction: column;
-}
-
 
 .ul img {
-    width: 40px;
-    height: 40px;
+    width: 2rem;
+    height: 1.5rem;
     filter: invert(94%) sepia(7%) saturate(215%) hue-rotate(113deg) brightness(100%) contrast(99%);
 }
 
@@ -51,12 +57,19 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
-    margin: 0.2rem 0;
+    gap: 1rem;
+    margin: 0.5rem 0;
     padding: 1rem;
     background-color: #395B64;
     border-radius: 1rem;
+    width: 10rem;
 }
+
+@media (max-width: 900px) {
+    .li {
+      width: 80%;
+    }
+  }
 
 a {
     color: #E7F6F2;
