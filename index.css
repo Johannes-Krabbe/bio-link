@@ -1,7 +1,7 @@
 html{
     background-color: #2C3333;
     font-family: monospace;
-    font-size: 2em;
+    font-size: 1.5em;
     box-sizing: border-box;
 }
 
@@ -42,7 +42,7 @@ main{
 
 
 .profilePicture img{
-    border-radius: 100%;
+    border-radius: 1000px;
     height: 10rem;
 }
 
@@ -65,9 +65,9 @@ main{
     width: 10rem;
 }
 
-@media (max-width: 900px) {
-    .li {
-      width: 80%;
+@media only screen and (max-width: 1000px) {
+    html {
+      font-size: 1.25em;
     }
   }
 
